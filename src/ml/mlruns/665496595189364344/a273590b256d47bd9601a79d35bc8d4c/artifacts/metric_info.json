@@ -1,0 +1,10 @@
+{
+  "accuracy_score-2_X_test": "accuracy_score(y_true=y_test, y_pred=y_test_pred)",
+  "accuracy_score_X_train": "accuracy_score(y_true=y_train, y_pred=y_train_pred)",
+  "f1_score-2_X_test": "f1_score(y_true=y_test, y_pred=y_test_pred)",
+  "f1_score_X_train": "f1_score(y_true=y_train, y_pred=y_train_pred)",
+  "precision_score-2_X_test": "precision_score(y_true=y_test, y_pred=y_test_pred)",
+  "precision_score_X_train": "precision_score(y_true=y_train, y_pred=y_train_pred)",
+  "recall_score-2_X_test": "recall_score(y_true=y_test, y_pred=y_test_pred)",
+  "recall_score_X_train": "recall_score(y_true=y_train, y_pred=y_train_pred)"
+}

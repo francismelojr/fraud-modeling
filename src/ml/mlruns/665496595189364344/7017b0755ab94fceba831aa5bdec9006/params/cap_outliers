@@ -1,0 +1,1 @@
+Winsorizer(variables=['score_5', 'score_6'])

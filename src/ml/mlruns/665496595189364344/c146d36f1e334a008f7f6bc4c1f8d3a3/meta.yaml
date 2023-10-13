@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/franc/Data%20Science/Notebooks/fraud-modeling/src/ml/mlruns/665496595189364344/c146d36f1e334a008f7f6bc4c1f8d3a3/artifacts
+deleted_time: 1697162402315
+end_time: 1697162364672
+entry_point_name: ''
+experiment_id: '665496595189364344'
+lifecycle_stage: deleted
+run_id: c146d36f1e334a008f7f6bc4c1f8d3a3
+run_name: lgbm_tuned_2
+run_uuid: c146d36f1e334a008f7f6bc4c1f8d3a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697162221996
+status: 3
+tags: []
+user_id: franc

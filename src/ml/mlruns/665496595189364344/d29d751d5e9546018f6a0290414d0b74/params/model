@@ -1,0 +1,8 @@
+BayesSearchCV(cv=5, estimator=LGBMClassifier(random_state=0), n_iter=20,
+              random_state=23, scoring='roc_auc',
+              search_spaces={'colsample_bytree': (0.1, 1),
+                             'learning_rate': (0.001, 0.1),
+                             'max_depth': (3, 12),
+                             'min_child_samples': (20, 200),
+                             'num_leaves': (2, 128), 'subsample': (0.05, 1)},
+              verbose=1)

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/franc/Data%20Science/Notebooks/fraud-modeling/src/ml/mlruns/665496595189364344/725ba946e58845fc8fcc00959780415a/artifacts
+end_time: 1697153496952
+entry_point_name: ''
+experiment_id: '665496595189364344'
+lifecycle_stage: active
+run_id: 725ba946e58845fc8fcc00959780415a
+run_name: random_forest_default
+run_uuid: 725ba946e58845fc8fcc00959780415a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697153434827
+status: 3
+tags: []
+user_id: franc
