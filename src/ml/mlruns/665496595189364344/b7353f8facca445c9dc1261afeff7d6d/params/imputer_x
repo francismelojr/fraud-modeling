@@ -1,1 +1,0 @@
-CategoricalImputer(fill_value='x', variables=['pais'])

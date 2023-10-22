@@ -1,1 +1,0 @@
-MeanEncoder(variables=['pais', 'categoria_produto'])

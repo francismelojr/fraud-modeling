@@ -1,1 +1,0 @@
-CategoricalImputer(fill_value='N', variables=['entrega_doc_2'])

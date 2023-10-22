@@ -1,3 +1,0 @@
-ArbitraryNumberImputer(arbitrary_number=-100,
-                       variables=['score_2', 'score_3', 'score_4', 'score_6',
-                                  'score_9', 'score_10'])
