@@ -1,4 +1,3 @@
 *.csv
 mlruns/
 .ipynb_checkpoints/
-*.png
