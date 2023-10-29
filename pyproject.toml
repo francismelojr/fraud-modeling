@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fraud-modeling"
+version = "0.1.0"
+description = "Fraud analysis and modeling using machine learning models."
+authors = ["Francisco Santos <francismelo.jr@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.5"
+mlflow = "2.7.1"
+pandas = "2.1.2"
+missingno = "0.5.2"
+matplotlib = "3.8.0"
+feature-engine = "1.6.2"
+lightgbm = "4.1.0"
+scikit-optimize = "0.9.0"
+seaborn = "0.13.0"
+numpy = "1.23.5"
+category-encoders = {git = "https://github.com/scikit-learn-contrib/category_encoders.git"}
+tqdm = "^4.66.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
