@@ -1,14 +1,28 @@
-# pipeline
 import pickle
-import pandas as pd
 
-input_file = "src/model/model_lgbm.bin"
+import pandas as pd
+import uvicorn
+from fastapi import FastAPI, HTTPException
+
+input_file = 'src/model/model_lgbm.bin'
 
 with open(input_file, 'rb') as f_in:
-    pipeline = pickle.load(f_in)
+    pipeline, best_threshold = pickle.load(f_in)
 
-data = pd.read_csv('data/data.csv')
+app = FastAPI()
 
-X = data.drop(columns=['fraude'])
 
-print(pipeline.predict_proba(X))
+@app.post('/predict')
+async def predict(request: dict):
+
+    X = pd.DataFrame([request])
+    y_score = pipeline.predict_proba(X)[:, 1]
+    is_fraud = y_score > best_threshold
+
+    result = {'fraud_probability': float(y_score), 'fraud': bool(is_fraud)}
+
+    return result
+
+
+if __name__ == '__main__':
+    uvicorn.run(app, host='0.0.0.0', port=9696)
