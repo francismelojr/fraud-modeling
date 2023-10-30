@@ -18,7 +18,11 @@ scikit-optimize = "0.9.0"
 seaborn = "0.13.0"
 numpy = "1.23.5"
 category-encoders = {git = "https://github.com/scikit-learn-contrib/category_encoders.git"}
-tqdm = "^4.66.1"
+fastapi = "^0.104.0"
+uvicorn = "^0.23.2"
+taskipy = "^1.12.0"
+blue = "^0.9.1"
+isort = "^5.12.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -27,3 +31,8 @@ ipykernel = "^6.26.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+train = "python src/model/train.py"
+predict = "python src/model/predict.py"
+format = "isort . && blue ."
