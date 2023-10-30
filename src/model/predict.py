@@ -4,7 +4,7 @@ import pandas as pd
 import uvicorn
 from fastapi import FastAPI, HTTPException
 
-input_file = 'src/model/model_lgbm.bin'
+input_file = 'model_lgbm.bin'
 
 with open(input_file, 'rb') as f_in:
     pipeline, best_threshold = pickle.load(f_in)
