@@ -63,7 +63,7 @@ task predict
 
 * Para enviar uma requisição do tipo POST como teste:
 ```bash
-task  test
+task test
 ```
 
 ## Iniciar API com Docker
