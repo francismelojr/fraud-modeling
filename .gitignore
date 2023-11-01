@@ -4,5 +4,4 @@ mlruns/
 /.pytest_cache
 .venv
 .vscode
-poetry.lock
 __pycache__/
