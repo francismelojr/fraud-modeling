@@ -1,10 +1,13 @@
+import os
 import pickle
 
 import pandas as pd
 import uvicorn
 from fastapi import FastAPI, HTTPException
 
-input_file = 'model_lgbm.bin'
+path = os.path.dirname(os.path.abspath(__file__))
+
+input_file = os.path.join(path, 'model_lgbm.bin')
 
 with open(input_file, 'rb') as f_in:
     pipeline, best_threshold = pickle.load(f_in)
